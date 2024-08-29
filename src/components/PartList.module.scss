@@ -1,0 +1,36 @@
+.partList {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  text-size-adjust: 20px;
+  margin: 25px 0;
+}
+
+.partItem {
+  border: 2px solid #faf9fc;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  background: #a891ea;
+  position: relative;
+  line-height: 35px;
+  margin: 2px;
+  color: #eaeaea;
+  font-weight: bolder;
+  }
+
+.partItemSelected {
+  @extend .partItem;
+
+  &:before {
+    border: 2px solid #602eed;
+    content: "";
+    border-radius: 5%;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+  }
+}

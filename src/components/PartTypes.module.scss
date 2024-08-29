@@ -1,0 +1,53 @@
+.root {
+  align-self: end;
+}
+
+.partTypes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.actions {
+  @extend .partTypes;
+
+  margin-bottom: 9px;
+}
+
+.partType {
+  cursor: pointer;
+  border-radius: 5%;
+  border: 2px solid transparent;
+  background: #fdfafa;
+  margin: 2px;
+  position: relative;
+
+  & img {
+    border-radius: 5%;
+    height: 50px;
+  }
+}
+
+.action {
+  @extend .partType;
+
+  & img {
+    border-radius: 5%;
+    padding: -25px;
+    height: 40px;
+  }
+}
+
+.partTypeSelected {
+  @extend .partType;
+
+  &:before {
+    border: 2px solid #602eed;
+    content: "";
+    border-radius: 5%;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+  }
+}

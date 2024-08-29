@@ -1,0 +1,12 @@
+.Selector {
+  display: grid;
+  height: 100%;
+  align-self: baseline;
+  grid-template-columns: minmax(250px, 450px);
+  grid-template-rows: 40% min-content auto;
+  background-image: url('../../public/parts_icons/2.png'); /* Corrected relative path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
